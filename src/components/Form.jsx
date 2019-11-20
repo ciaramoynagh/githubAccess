@@ -2,20 +2,23 @@ import React from 'react';
 
 const Form = (props) => {
     return (<form onSubmit={(event) => props.handleUserFormSubmit(event)}>
+        <div>
         <label>
-            <p>Search:</p>
+            <h4>Please search for a Github user below:</h4>
             <input name="username"
                 type="text"
-                placeholder="GitHub username"
+                placeholder="Username"
                 required
                 value={props.formData.username}
                 onChange={props.handleFormChange}
             />
-        </label>
+            </label>
+        </div>
+        <p></p>
         <div>
             <input
                 type="submit"
-                value="Submit"
+                value="Search"
             />
         </div>
     </form>)
