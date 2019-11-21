@@ -4,7 +4,7 @@ const Form = (props) => {
     return (<form onSubmit={(event) => props.handleUserFormSubmit(event)}>
         <div>
         <label>
-            <h4>Please search for a Github user below:</h4>
+                <h4 style={{ color: "#7C4CDF" }}>Please search for a Github user below:</h4>
             <input name="username"
                 type="text"
                 placeholder="Username"

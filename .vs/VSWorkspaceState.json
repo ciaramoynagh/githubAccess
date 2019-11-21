@@ -3,8 +3,10 @@
     "",
     "\\public",
     "\\src",
-    "\\src\\components"
+    "\\src\\components",
+    "\\src\\css",
+    "\\src\\lda"
   ],
-  "SelectedNode": "\\src\\App.jsx",
+  "SelectedNode": "\\src",
   "PreviewInSolutionExplorer": false
 }
