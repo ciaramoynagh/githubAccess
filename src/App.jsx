@@ -93,6 +93,8 @@ class App extends Component {
                 <header className="App-header">
                     <h1 style={{color: "#6E2BC7"}}>GitHub Visualisation</h1>
                 </header>
+                <body>
+                    <img src= "image.png" width="100" height="100"/>
                 <p style={{ color: "#774AB1" }}className="App-intro">
                     Time to get creeping...
         </p>
@@ -116,8 +118,10 @@ class App extends Component {
                 <LanguageList langslist={this.state.replanguagecount} />
                 <hr></hr>
             <p style={{ color: "#5E1CB3" }}> <b> Keywords: </b> </p> {this.state.keywords}
-                <hr></hr>
-            </div>
+                    <hr></hr>
+                </body>
+           </div>
+                
         );
     }
 } export default App;
