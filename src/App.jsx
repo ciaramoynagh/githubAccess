@@ -91,34 +91,36 @@ class App extends Component {
         return (
             <div className="App">
                 <header className="App-header">
-                    <h1 style={{color: "#6E2BC7"}}>GitHub Visualisation</h1>
+                    <h1 style={{ color: "#6E2BC7" }}>GitHub Visualisation</h1>
                 </header>
                 <body>
+                    <div className="Headings">
                     <img src= "image.png" width="100" height="100"/>
                 <p style={{ color: "#774AB1" }}className="App-intro">
                     Time to get creeping...
         </p>
-                
                 <Form
                     formData={this.state.formData}
                     handleUserFormSubmit={this.handleUserFormSubmit}
                     handleFormChange={this.handleFormChange}
                     />
-                <hr></hr>
-                <p style={{ color: "#5E1CB3" }}><b> Profile Details: </b></p>
+                    <hr></hr>
+                   
+                <p><b> Profile Details: </b></p>
         <ProfileDetails infoclean={this.state.infoclean} />
                 <hr></hr>
-                <p style={{ color: "#5E1CB3" }}><b> Own Repositories</b></p>
+                <p><b> Own Repositories</b></p>
         <SortedList repitems={this.state.repitems} />
                 <hr></hr>
-                <p style={{ color: "#5E1CB3" }}> <b> Starred Repositories:</b></p>
+                <p> <b> Starred Repositories:</b></p>
         <SortedList repitems={this.state.staritems} />
                 <hr></hr>
-                <p style={{ color: "#5E1CB3" }}> <b> Own Repos Language Count:</b></p>
+                <p> <b> Own Repos Language Count:</b></p>
                 <LanguageList langslist={this.state.replanguagecount} />
-                <hr></hr>
-            <p style={{ color: "#5E1CB3" }}> <b> Keywords: </b> </p> {this.state.keywords}
-                    <hr></hr>
+                        <hr></hr>
+            <p> <b> Keywords: </b> </p> {this.state.keywords}
+                        <hr></hr>
+                    </div>
                 </body>
            </div>
                 

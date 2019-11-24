@@ -4,7 +4,27 @@
     width: auto;
     background-size: auto;
     background-color: #BFD1E5;
-
+    margin: 0;
+    padding: 0;
     justify-content: center;
     align-items: center;
+}
+
+.App-header {
+    font-family: 'Comic Sans MS';
+    font-size: 20px;
+    font-style: italic;
+}
+
+.Headings {
+    font-family: 'Comic Sans MS';
+    font-style: italic;
+    color: #5E1CB3
+}
+
+.Sub-Headings {
+    font-family: Arial;
+    font-style: italic;
+    text-decoration: underline;
+    
 }
