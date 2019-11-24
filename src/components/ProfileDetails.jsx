@@ -44,12 +44,12 @@ import Moment from 'react-moment'; const imgStye = {
                 {props.infoclean.following ? <div><p className="Sub-Headings">Number Following:</p><p>{props.infoclean.following}</p></div> : null}
             </div>
             <div>
-                {props.infoclean.html_url ? <div><p><a href={props.infoclean.html_url} target="_blank">View on GitHub</a></p></div> : null}
+                {props.infoclean.login ? <div><p className="Sub-Headings">GitHub Activity Chart:</p>{<img src={"http://ghchart.rshah.org/" + props.infoclean.login} alt="Github chart" />
+                }<br /></div> : null}
             </div>
             <div>
-                {props.infoclean.login ? <div>{<img src={"http://ghchart.rshah.org/" + props.infoclean.login} alt="Github chart" />
-                }<br /><a href="https://ghchart.rshah.org/" target="_blank">Source for GitHub Chart API</a></div> : null}
-                </div>
+                {props.infoclean.html_url ? <div><p className="Headings"><a href={props.infoclean.html_url} target="_blank">Click Here to View User on GitHub</a></p></div> : null}
+            </div>
         </div>
     )
 }; export default ProfileDetails;
