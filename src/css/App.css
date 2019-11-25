@@ -1,25 +1,24 @@
+body {
+    background-color: #BFD1E5;
+    background-image: linear-gradient(#BFD1E5, #DD85DF)
+}
+
 .App {
     text-align: center;
-    height: auto;
-    width: auto;
-    background-size: auto;
-    background-color: #BFD1E5;
-    margin: 0;
-    padding: 0;
     justify-content: center;
     align-items: center;
 }
 
 .App-header {
-    font-family: 'Comic Sans MS';
+    font-family: Calibri;
     font-size: 20px;
     font-style: italic;
 }
 
 .Headings {
-    font-family: 'Comic Sans MS';
+    font-family: Calibri;
     font-style: italic;
-    color: #5E1CB3
+    color: #5E1CB3;
 }
 
 .Sub-Headings {
@@ -30,6 +29,12 @@
 }
 
 .Links {
-    font-family: 'Comic Sans MS';
+    font-family: Calibri;
     font-style: italic;
+}
+
+.barChart {
+    text-align: left;
+    text-decoration: underline;
+    font-style: normal;
 }

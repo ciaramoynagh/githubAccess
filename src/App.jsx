@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import axios from 'axios'; import Form from './components/Form.jsx';
+import axios from 'axios';
+import Form from './components/Form.jsx';
 import SortedList from './components/SortedList.jsx';
 import ProfileDetails from './components/ProfileDetails.jsx';
 import LanguageList from './components/LanguageList.jsx';
 import lda from './lda';
 import "./css/App.css";
 
-class App extends Component {
+class App extends Component {        
+
     constructor() {
         super();
         this.state = {
@@ -23,7 +25,8 @@ class App extends Component {
         }
         this.handleUserFormSubmit = this.handleUserFormSubmit.bind(this);
         this.handleFormChange = this.handleFormChange.bind(this);
-    } handleUserFormSubmit(event) {
+    }
+    handleUserFormSubmit(event) {
         event.preventDefault();
         axios.get('https://api.github.com/users/' + this.state.formData.username)
             .then(response => this.setState({
@@ -99,7 +102,7 @@ class App extends Component {
                 <p style={{ color: "#774AB1" }}className="App-intro">
                     Time to get creeping...
         </p>
-                <Form
+                        <Form
                     formData={this.state.formData}
                     handleUserFormSubmit={this.handleUserFormSubmit}
                     handleFormChange={this.handleFormChange}
