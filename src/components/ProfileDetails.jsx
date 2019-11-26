@@ -49,7 +49,7 @@ import Moment from 'react-moment'; const imgStye = {
             </div>
             <div>
                 {props.infoclean.html_url ? <div><p className="Headings"><a href={props.infoclean.html_url} target="_blank">Click Here to View User on GitHub</a></p></div> : null}
-            </div>
+                </div>
         </div>
     )
 }; export default ProfileDetails;
