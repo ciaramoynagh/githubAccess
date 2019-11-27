@@ -8,10 +8,10 @@ When a user inputs a GitHub profile name numerous details about this profile are
 
 It also displays a list of the languages used and a pie chart and bar chart representation of this data.
 
-<h2>To Run..<h2>
+<h2>To Run..</h2>
   
 In order to run this app clone the repo and type:
 
-<h4> start </h4>
+<h4>  npm start </h4>
 
 Open http://localhost:3000 to view this app in the browser.
