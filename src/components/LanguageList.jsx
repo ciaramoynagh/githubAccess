@@ -2,6 +2,7 @@ import React from 'react';
 import BarChart from './BarChart';
 import PieChart from './PieChart.jsx';
 
+
 let i = '';
 let languages = '';
 
@@ -29,10 +30,10 @@ const LanguageList = (props) => {
                             <h4>Chart Representation of Language Count</h4>
 
                             <div>
-
+<div>
                                 <PieChart repoSize={i.split('')} repoNames={languages.split(',')} />
-
-                                <BarChart data={i.split('')} size={[500, 500]} />
+</div>
+                                    <BarChart repoSize={i.split('')} repoNames={languages.split(',')} />
                                 {i = ''}
                                 {languages = ''}
                                 </div>
