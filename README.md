@@ -16,4 +16,4 @@ In order to run this app clone the repo and type:
 
 <h4>  npm start </h4>
 
-Open http://localhost:3000 to view this app in the browser.
+Open http://localhost:3000 to view this app in the browser
