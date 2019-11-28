@@ -12,7 +12,8 @@ const PieChart = (props) => {
                 type: 'pie'
             }
         ]}
-            layout={{ width: 700, height: 400 }}
+            layout={{ width: 600, height: 600, paper_bgcolor: 'rgba(0,0,0,0)', plot_bgcolor: 'rgba(0,0,0,0)' }}
+
         />
     );
 }

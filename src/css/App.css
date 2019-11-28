@@ -28,6 +28,10 @@ body {
     
 }
 
+.LangList {
+    text-align: left;
+}
+
 .Links {
     font-family: Calibri;
     font-style: italic;
@@ -35,6 +39,10 @@ body {
 
 .Chart {
     text-align: left;
+}
+
+.Title {
+    text-align: center;
 }
 
 .slide-in-blurred-top {

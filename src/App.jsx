@@ -8,6 +8,7 @@ import lda from './lda';
 import "./css/App.css";
 
 
+
 class App extends Component {
 
     constructor() {
@@ -122,7 +123,9 @@ class App extends Component {
                             <ProfileDetails infoclean={this.state.infoclean} />
                             <hr></hr>
                             <p> <b> Personal Language Count:</b></p>
-                            <LanguageList langslist={this.state.replanguagecount} />
+                            <div className = "LangList">
+                                <LanguageList langslist={this.state.replanguagecount} />
+                                </div>
                             <hr></hr>
                             <p><b> Own Repositories</b></p>
                             <SortedList repitems={this.state.repitems} />

@@ -27,12 +27,13 @@ const LanguageList = (props) => {
                     <div>
                         {(i != '') ?
                             <div>
-                            <h4>Chart Representation of Language Count</h4>
-
+                                <div className = 'Title'>
+                            
+                           </div>
                             <div>
-<div>
+
                                 <PieChart repoSize={i.split('')} repoNames={languages.split(',')} />
-</div>
+
                                     <BarChart repoSize={i.split('')} repoNames={languages.split(',')} />
                                 {i = ''}
                                 {languages = ''}

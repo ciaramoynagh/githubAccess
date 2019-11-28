@@ -1,9 +1,14 @@
 import React from 'react';
-import Moment from 'react-moment'; const imgStye = {
+import Moment from 'react-moment';
+import BarChart from './BarChart';
+
+const imgStye = {
     borderRadius: "100%",
     width: "200px",
     height: "200px"
-}; const ProfileDetails = (props) => {
+};
+
+const ProfileDetails = (props) => {
     return (
         <div>
             <p></p>
@@ -50,6 +55,24 @@ import Moment from 'react-moment'; const imgStye = {
             <div>
                 {props.infoclean.html_url ? <div><p className="Headings"><a href={props.infoclean.html_url} target="_blank">Click Here to View User on GitHub</a></p></div> : null}
                 </div>
-        </div>
+            <div>
+                {(props.infoclean != '') ?
+                    <div>
+                        <h4>Chart Representation of Repositories, Followers and Following</h4>
+
+                        <div>
+                            
+                            <BarChart repoSize={[props.infoclean.public_repos, props.infoclean.followers, props.infoclean.following]} repoNames={['Repos', 'Followers', 'Following']} label={''} />
+                           
+           
+                        </div>
+                    </div> :
+                    <div></div>
+                }
+            </div>
+                
+            </div>
+       
     )
-}; export default ProfileDetails;
+}; export default ProfileDetails; 
+
