@@ -6,9 +6,11 @@ This project was built using ReactJS with Axios HTTP client to retrieve Github d
 
 When a user inputs a GitHub profile name numerous details about this profile are displayed- including name, icon, biography, personal/starred repositries, etc.
 
-![exampleGif](docs/ezgif.com-video-to-gif.gif)
+![exampleGit](ezgif.com-optimize.gif)
 
-It also displays a list of the languages used and a pie chart and bar chart representation of this data.
+It also displays a  bar chart representation of the users repository, followers, and following numbers, aswell as a list of the languages used and a pie chart and bar chart representation of this data.
+
+![exampleGif](docs/ezgif.com-video-to-gif.gif)
 
 <h2>To Run..</h2>
   
